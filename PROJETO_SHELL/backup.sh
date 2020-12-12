@@ -11,5 +11,5 @@ mkdir ~/backups/$user 2> /dev/null
 rsync -avz ${user}@${ip}:${dir} /tmp/auxiliar
 
 cd /tmp/auxiliar
-tar -cvzf $data.tar.gz /tmp/auxiliar && mv /tmp/auxiliar/$data.tar.gz ~/backups/$user
+tar -cvzf ${data}.tar.gz /tmp/auxiliar && mv /tmp/auxiliar/${data}.tar.gz ~/backups/$user
 cd ~/projeto
